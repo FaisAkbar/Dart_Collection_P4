@@ -1,4 +1,4 @@
-void main() {
+void main(List<String> arguments) {
   var gifts = {
     // Key:    Value
     'first': 'partridge',
@@ -16,19 +16,19 @@ void main() {
     54: '2141720215'
   };
 
-  print(gifts['first']);
-  print(nobleGases[2]);
-  var mhs1 = Map<String, String>();
-  gifts['first'] = 'partridge';
-  gifts['second'] = 'turtledoves';
-  gifts['fifth'] = 'golden rings';
-  gifts['name'] = 'Fawaa\'el Akbar Firdaus';
-  gifts['nim'] = '2141720215';
+  print(gifts);
+  print(nobleGases);
+  var mhs1 = <String, String>{};
+  mhs1['first'] = 'partridge';
+  mhs1['second'] = 'turtledoves';
+  mhs1['fifth'] = 'golden rings';
+  mhs1['name'] = 'Fawaa\'el Akbar Firdaus';
 
-  var mhs2 = Map<int, String>();
-  nobleGases[2] = 'helium';
-  nobleGases[10] = 'neon';
-  nobleGases[18] = 'argon';
-  nobleGases[36] = 'Fawaa\'el Akbar Firdaus';
-  nobleGases[54] = '2141720215';
+  var mhs2 = <int, String>{};
+  mhs2[2] = 'helium';
+  mhs2[10] = 'neon';
+  mhs2[18] = 'argon';
+  mhs2[36] = '2141720215';
+  print(mhs1);
+  print(mhs2);
 }
